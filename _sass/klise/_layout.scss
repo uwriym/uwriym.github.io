@@ -3,12 +3,24 @@
   height: auto;
   max-width: calc(#{$wide-size} - (#{$spacing-full} * 2));
   max-width: -webkit-calc(#{$wide-size} - (#{$spacing-full} * 2));
-  position: relative;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
   margin-right: auto;
   margin-left: auto;
   border-bottom: 1px solid $light;
   padding: $spacing-full - 15px $spacing-full;
+  background-color: $white;
+  z-index: 10;
   @extend %clearfix;
+}
+
+.navbar-sunny {
+  background-color: $white;
+}
+.navbar-moon {
+  background-color: $dark-black;
 }
 
 // Navigation
@@ -326,7 +338,6 @@
   }
 }
 
-
 .search-article {
   position: relative;
   margin-bottom: 50px;
@@ -348,7 +359,7 @@
     border-radius: 5px;
     padding: 10px 10px 10px 35px;
     color: $text-base-color;
-    -webkit-appearance: none;
+    //-webkit-appearance: none;
     font-size: $base-font-size;
     background-color: rgba(128, 128, 128, 0.1);
     border: 1px solid rgba(128, 128, 128, 0.1);

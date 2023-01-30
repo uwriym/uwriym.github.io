@@ -49,7 +49,7 @@
 
   time {
     position: relative;
-    margin-right: 1.5em;
+    margin-right: 0.5em;
 
     &::after {
       background: $light;
@@ -63,6 +63,13 @@
   }
 
   span[itemprop="author"] {
+    position: relative;
+    bottom: 1px;
+  }
+
+  a[itemprop="name"] {
+    color: $dark-gray;
+    text-decoration: none;
     border-bottom: 1px dotted $light;
   }
 }
@@ -88,7 +95,7 @@
   }
 
   a {
-    color: $text-link-blue;
+    color: $text-link-red;
     text-decoration: none;
     &[target="_blank"]::after {
       content: " \2197";
@@ -99,13 +106,15 @@
       vertical-align: baseline;
     }
 
+    /*  
     &:hover {
-      color: $text-link-blue-active;
+      color: $text-link-red-active;
     }
 
     &:focus {
-      color: $text-link-blue;
+      color: $text-link-red;
     }
+    */
   }
 
   > p {
@@ -263,4 +272,12 @@
 .center {
   display: block;
   margin: auto;
+}
+
+.post {
+  margin-top: -30px;
+}
+
+time::after {
+  display: none;
 }

@@ -85,6 +85,11 @@ body[data-theme="dark"] {
     span[itemprop="author"] {
       border-color: $dark-light;
     }
+    a[itemprop="name"] {
+      color: $dark-gray;
+      text-decoration: none;
+      border-bottom: 1px dotted $gray;
+    }
   }
 
   // Link
@@ -234,13 +239,13 @@ body[data-theme="dark"] {
     .solution:hover {
       color: $dark-text-link-blue-active;
     }
-  }  
+  }
 
   .search-article {
     input[type="search"] {
       color: $dark-text-base-color;
       &::-webkit-input-placeholder {
-        color: rgba(128,128,128,0.8);
+        color: rgba(128, 128, 128, 0.8);
       }
     }
   }
