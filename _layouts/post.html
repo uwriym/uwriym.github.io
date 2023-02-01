@@ -12,10 +12,12 @@ layout: compress
   <script>
     const body = document.body;
     const data = body.getAttribute("data-theme");
+    
 
     const initTheme = (state) => {
       if (state === "dark") {
         body.setAttribute("data-theme", "dark");
+        
       } else if (state === "light") {
         body.removeAttribute("data-theme");
       } else {
@@ -92,18 +94,40 @@ layout: compress
       {% if page.comments %}
         {% include comments.html %}
       {% endif %}
+      <!-- utterances comment -->
+      <script src="https://utteranc.es/client.js"
+      repo="uwriym/uwriym.github.io"
+      issue-term="pathname"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+      </script>
+      <script src="https://utteranc.es/client.js"
+      repo="uwriym/uwriym.github.io"
+      issue-term="pathname"
+      theme="github-dark"
+      crossorigin="anonymous"
+      async>
+      </script>
+      
 
     </main>
 
     {% if page.modified %}
       <small class="post-updated-at">updated_at {{page.modified | date: "%Y-%m-%d"}}</small>
     {% endif %}
+
+    
+
     {% if page.next or page.previous %}
       {% include navigation.html %}
     {% endif %}
 
+    
+
     {% include footer.html %}
   </div>
+  
   <script
       src="https://kit.fontawesome.com/279fc0b54b.js"
       crossorigin="anonymous"
