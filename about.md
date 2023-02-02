@@ -6,11 +6,10 @@ excerpt: Hello peeps, I'm student of computer science from Banyuwangi, living in
 comments: false
 ---
 
-<center>컴퓨터과학 복수전공생입니다. 글 써본 적은 별로 없는데 써보니까 재밌네요.</center>
+<center>컴퓨터과학 복수전공생입니다.<br>글 써본 적은 별로 없는데 써보니까 재밌네요.</center>
 <br>
 
 **may u needs ✨**
 
 - {{ site.author.email }}
 - {{ site.author.github }}
-- {{ site.author.velog }}
