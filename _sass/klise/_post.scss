@@ -15,13 +15,19 @@
     display: flex;
   }
 
-  .tags {
+  .tags,
+  .categories {
     margin-left: 3px;
     letter-spacing: 0.5px;
 
     .tag {
       font-weight: $bold-weight;
       font-size: $small-font-size;
+      background-color: rgba(255, 88, 88, 0.2);
+      border-radius: 10px;
+      padding: 3px 5px;
+      position: relative;
+      bottom: 1px;
 
       &:hover {
         text-decoration: none;
@@ -32,6 +38,8 @@
   #category {
     font-weight: $bold-weight;
     font-size: $small-font-size;
+    position: relative;
+    bottom: 1px;
   }
 
   i {
