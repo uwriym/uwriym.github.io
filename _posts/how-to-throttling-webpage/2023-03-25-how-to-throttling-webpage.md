@@ -2,8 +2,8 @@
 title: 브라우저 속도가 느려졌으면 좋겠어
 date: 2023-03-25 00:00:00 +09:00
 modified: 2023-03-25 00:00:00 +09:00
-tags: [DevTools]
-categories: 개발
+tags: [ DevTools, WebScraping ]
+categories: [ 개발 ]
 ---
 
 <figure style="text-align: center;">
@@ -13,7 +13,7 @@ categories: 개발
 
 트위터 크롤러를 만들던 중, 위처럼 스크롤되다가 로딩될 때 나타나는 progress bar 때문에 수집이 종료되는 문제가 있었다.
 
-때문에 저놈이 나타날 때 잠깐 쉬었다가 Nokogiri로 다시 HTML을 파싱하려고 했는데
+때문에 이 element가 나타날 때 잠깐 쉬었다가 Nokogiri로 다시 HTML을 파싱하려고 했는데
 
 **금방 사라져버리는 저놈에 대한 정보를 얻을 수가 없다**
 
@@ -23,7 +23,7 @@ progress bar와 같은 것은 로딩 후 빠르게 사라지기 때문에 해당
 
 이 때 강제로 브라우저 속도를 낮추어 원하는 element에 접근할 수 있다.
 
-## 속도 저하 방법
+# 속도 저하 방법
 
 ### 네트워크 프리셋 변경
 
@@ -51,7 +51,7 @@ Network에서 이미지에 체크되어 있는 No throttling을 클릭하면 다
 
 네트워크는 끊지 않으면서 Slow 3G보다는 더 느려야 한다면 커스텀을 할 수도 있다.
 
-위의 메뉴에서 맨 밑에 있는 `Add...`를 클릭하여 커스텀 화면으로 들어가자.
+위의 메뉴에서 맨 밑에 있는 `Add...` 를 클릭하여 커스텀 화면으로 들어가자.
 
 <figure style="text-align: center;">
     <img width="500" alt="DevTools" src="https://user-images.githubusercontent.com/96712692/227718488-a5e1a345-9df2-4b35-8991-15de9cbb5539.png">
@@ -65,20 +65,18 @@ Download 속도와 Upload 속도, 그리고 Latency를 정말 느리게 설정�
 나같은 경우에는 다운로드 1kbit/s, 업로드 1kbit/s, 레이턴시 10000ms로 설정해두었더니
 progress bar는 그대로 있으면서 계속해서 1kbit/s 속도로 로딩하게 된다.
 
-<center>
+<figure style="text-align: center;">
     <img width="171" alt="스크린샷 2023-03-25 11 09 28" src="https://user-images.githubusercontent.com/96712692/227682170-1eb0fda1-d7fc-4a5e-b646-7ac3bfe2160f.png">
-</center>
+</figure>
 
 이제 Network로 돌아와 커스텀 프로파일을 적용하자. 엄청 느려질 것이다.
 <br><br>
 
 ### 테스트
 
-<center>
-    <figure>
-        <img width="625" alt="스크린샷 2023-03-25 10 52 51" src="https://user-images.githubusercontent.com/96712692/227682162-6ec3f909-b6d9-434f-a602-0367920fb1fb.png">
-        <figcation>계속 도는 progress bar</figcaption>
-    </figure>
-</center>
+<figure style="text-align: center;">
+    <img width="625" alt="스크린샷 2023-03-25 10 52 51" src="https://user-images.githubusercontent.com/96712692/227682162-6ec3f909-b6d9-434f-a602-0367920fb1fb.png">
+    <figcaption>계속 도는 progress bar</figcaption>
+</figure>
 
 이제 여유롭게 해당 element에 접근할 수 있게 되었다.
