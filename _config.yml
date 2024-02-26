@@ -1,5 +1,5 @@
 # Site settings
-title: KeunTong # site title
+title: uwriym.log # site title
 description: "아 글 좀 잘 쓰고 싶어라" # site description
 lang: "ko-KR" # default lang
 timezone: Asia/South Korea # set your timezone
@@ -12,7 +12,7 @@ futrue: true
 author:
   name: uwriym # author name
   bio: >- # tell to the world
-    아 글 좀 잘 쓰고 싶어라.
+    코더 말고 개발자.
   username: uwriym # general username
   github: <a href="//github.com/uwriym" target="_blank">github</a> # github username
   velog: <a href="//velog.io/@uwriym" target="_blank">velog</a> # velog link
