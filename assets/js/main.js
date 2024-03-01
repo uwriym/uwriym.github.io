@@ -38,6 +38,10 @@ const handleKeywordHighLight = () => {
 
     if (category === '') return;
 
+    const h2Elements = document.querySelectorAll('h2');
+    h2Elements.forEach(function (elem) {
+        elem.style.opacity = elem.id === category ? "1" : "0.5";
+    });
     const h4Elements = document.querySelectorAll('h4');
     h4Elements.forEach(function (elem) {
         elem.style.opacity = elem.textContent.trim() === category ? "1" : "0.5";
