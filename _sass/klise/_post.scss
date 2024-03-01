@@ -118,6 +118,7 @@
   a {
     color: $text-link-red;
     text-decoration: none;
+    font-weight: bold;
     &[target="_blank"]::after {
       content: " \2197";
       font-size: $small-font-size;
@@ -140,8 +141,8 @@
 
   > p {
     margin: 0;
-    padding-top: $spacing-full - 15;
-    padding-bottom: $spacing-full - 15;
+    padding-top: $spacing-full - 13;
+    //padding-bottom: $spacing-full - 15;
   }
 
   ul.task-list {
