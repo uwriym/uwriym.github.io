@@ -5,7 +5,7 @@ modified: 2023-01-28 11:58:47 +09:00
 tags: [자격증, GA4]
 categories: 일상
 description: Shell adalah sebuah command-line interpreter; program yang berperan sebagai penerjemah perintah yang diinputkan oleh User yang melalui terminal, sehingga perintah tersebut bisa dimengerti oleh si Kernel.
-image: "/ga4-pass/IMG_0202.JPG"
+image: "/ga4-pass-review/IMG_0202.JPG"
 ---
 
 <center>
