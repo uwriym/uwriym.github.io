@@ -8,7 +8,7 @@ code {
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
-  font-size: $small-font-size;
+  //font-size: $base-font-size;
 
   &.highlighter-rouge {
     padding: 1px 3px;
@@ -16,9 +16,15 @@ code {
     top: -1px;
     background-color: #f6f6f6;
     border-radius: 2px;
-    border: 1px solid rgba(128,128,128,0.1);
+    border: 1px solid rgba(128, 128, 128, 0.1);
   }
 }
+
+// code block
+pre > code {
+  font-size: $small-font-size;
+}
+
 
 // Codeblock Theme
 pre.highlight, pre {
@@ -27,7 +33,7 @@ pre.highlight, pre {
     margin: 0 calc(51% - 51vw);
     padding-left: 20px;
   }
-  border: 1px solid rgba(128,128,128,0.1);
+  border: 1px solid rgba(128, 128, 128, 0.1);
   background-color: #1a1b21;
   border-radius: 2px;
   padding: 10px;
