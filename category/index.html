@@ -20,7 +20,7 @@ assign categories_list = site_categories | split:',' | sort %}
   </li>
   {% endunless %}{% endfor %}
 </ul>
-<h2>분류별 글 리스트</h2>
+<h2>Posts by Category</h2>
 {% for item in (0..site.categories.size) %}{% unless forloop.last %} {% capture
 this_word %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
 <div style="margin-bottom: 30px">
